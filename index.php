@@ -9,7 +9,7 @@ $app = new Silex\Application();
 $app['debug'] = true;
 
 $app['db'] = function() {
-    return new \PDO('mysql:host=localhost;dbname=angular','root','root');
+    return new \PDO('mysql:host=localhost;dbname=angular_laravel','roberto','123');
 };
 
 $app->get('/', function() use ($app) {
